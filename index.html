@@ -11,8 +11,12 @@
 		<div class="header">
 			<h1>Welcome!</h1>
 		</div>
+		<form class="pure-form"><fieldset>
+			<legend>Filter the results</legend>
+			<input type="text" placeholder="Search" ng-model="searchText" />
+		</fieldset></form>
 		<div ng-controller="GiltController" ng-init="getItems()">
-			<div ng-repeat="item in items">{{ $log.log(item) }}
+			<div ng-repeat="item in items | filter:searchText | limitTo:20">{{ $log.log(item) }}
 				<h2>{{ item.name }}</h2>
 				<img class="pure-img" ng-src="{{ item.image_urls.315x295[0].url }}" />
 				<span>{{ item.description }}</span>
