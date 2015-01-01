@@ -7,3 +7,27 @@ div.header {
 	text-align: center;
 	/* border-bottom: 1px solid #eee; */
 }
+
+div.item-desc {
+	margin: 50px 0;
+}
+
+span.store-home {
+	background: #d3eda3;
+	color: #72962e;
+}
+
+span.store-kids {
+	background: #e1f2fa;
+	color: #5992aa;
+}
+
+span.store-men {
+	background: #fcebbd;
+	color: #af9540;
+}
+
+span.store-women {
+	background: #ddaeff;
+	color: #8156a7;
+}
