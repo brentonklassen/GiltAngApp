@@ -2,26 +2,26 @@ div#main {
 	margin: 20px;
 }
 
-div.item-desc {
+div.sale-desc {
 	padding: 20px;
 }
 
-span.store-home {
+a.store-home {
 	background: #d3eda3;
 	color: #72962e;
 }
 
-span.store-kids {
+a.store-kids {
 	background: #e1f2fa;
 	color: #5992aa;
 }
 
-span.store-men {
+a.store-men {
 	background: #fcebbd;
 	color: #af9540;
 }
 
-span.store-women {
+a.store-women {
 	background: #ddaeff;
 	color: #8156a7;
 }
