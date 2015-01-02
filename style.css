@@ -1,15 +1,9 @@
 div#main {
-	max-width: 1000px;
-	margin: 0 auto;
-}
-
-div.header {
-	text-align: center;
-	/* border-bottom: 1px solid #eee; */
+	margin: 20px;
 }
 
 div.item-desc {
-	margin: 50px 0;
+	padding: 20px;
 }
 
 span.store-home {
