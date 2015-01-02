@@ -3,7 +3,13 @@ div#main {
 }
 
 div.sale-desc {
-	padding: 20px;
+	padding: 20px 0;
+}
+
+@media screen and (min-width: 48em){
+	div.sale-desc {
+		padding: 20px;
+	}
 }
 
 a.store-home {

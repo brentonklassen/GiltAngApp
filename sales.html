@@ -1,23 +1,26 @@
-<form class="pure-form"><fieldset>
-	<legend>Filter the results</legend>
-	<input type="text" placeholder="Search" ng-model="searchText" />
-</fieldset></form>
+<form class="pure-form">
+	<fieldset>
+		<legend>Filter the results</legend>
+		<input type="text" placeholder="Search" ng-model="searchText" />
+	</fieldset>
+</form>
 
 <div class="pure-g" ng-init="getItems()">
-	<div class="pure-u-1-2" ng-repeat="sale in sales | filter:searchText | limitTo:20">
+	<div class="pure-u-1 pure-u-lg-1-2" ng-repeat="sale in sales | filter:searchText | limitTo:20">
 		<div class="pure-g">
 
 			<div class="pure-u-1">
 				<h2>{{ sale.name }}</h2>
 			</div>
-			<div class="pure-u-1-3">
+			<div class="pure-u-1 pure-u-md-1-3">
 				<img class="pure-img" ng-src="{{ sale.image_urls['300x280'][0].url }}" />
 			</div>
-			<div class="pure-u-2-3">
+			<div class="pure-u-1 pure-u-md-2-3">
 				<div class="sale-desc">
 					<a ng-href="#/{{ sale.store }}" class="pure-button store-{{ sale.store }}">{{ sale.store }}</a>
 					<p>{{ sale.description }}</p>
 					<h3>Sale ends {{ sale.ends | date:'MM/dd/yyyy @ h:mma' }}!</h3>
+					<a class="pure-button" ng-href="{{ sale.sale_url }}">Shop {{ sale.size }} items now &raquo;</a>
 				</div>
 			</div>
 		</div>

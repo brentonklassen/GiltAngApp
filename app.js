@@ -46,6 +46,7 @@ angular.module('GiltApp', ['ngRoute'])
 		$scope.getItems = function(){
 			$http({method:'GET',url:'https://api.gilt.com/v1/sales/active.json?apikey=31e61f5b3173cc7b9db11bd5441351c319c07999f139cdd368494c62457f0f53'})
 			.success(function(data,status){
+				console.log(data.sales);
 				$scope.sales = data.sales;
 			})
 			.error(function(data,status){
